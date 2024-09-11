@@ -4,8 +4,6 @@
 
 ***_This is a simple Android application to review your memorization of the holy Qur'an._***
 
-[![Downloads](https://PlayBadges.pavi2410.me/badge/downloads?id=com.raafat.revise)](https://play.google.com/store/apps/details?id=com.raafat.revise)
-
 ---
 It allows you to review your memorization of the Holy Qur’an **_by showing / hiding the words_**.
 
