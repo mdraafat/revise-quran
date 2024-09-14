@@ -14,7 +14,7 @@ function receiveAya(ayaText) {
         const span = document.createElement('span');
         span.textContent = word;
         if(isHidden) {span.style.opacity = '0'; currentIndex = 0;}
-        span.classList.add('word'); // Add class name "word" to the span
+        span.classList.add('word'); 
         ayaTextDiv.appendChild(span);
         ayaTextDiv.appendChild(document.createTextNode(' '));
     });
@@ -33,7 +33,7 @@ function receiveAyaPrev(ayaText) {
         const span = document.createElement('span');
         span.textContent = word;
         if(isHidden) {span.style.opacity = '1'; currentIndex = words.length;}
-        span.classList.add('word'); // Add class name "word" to the span
+        span.classList.add('word'); 
         ayaTextDiv.appendChild(span);
         ayaTextDiv.appendChild(document.createTextNode(' '));
     });
@@ -53,7 +53,7 @@ function setMaxHeight() {
 
     const maxHeightRem = numLines * 4;
 
-    const element = document.getElementById('ayaText'); // Replace with your selector
+    const element = document.getElementById('ayaText'); 
 
     element.style.maxHeight = `${maxHeightRem}rem`;
 }
@@ -74,7 +74,7 @@ function toggleHideShow() {
     const ayaTextDiv = document.getElementById('ayaText');
 
     if (!isHidden) {
-        // Hide all words
+        
         wordElements.forEach(element => {
             element.style.opacity = '0';
         });
@@ -83,7 +83,7 @@ function toggleHideShow() {
             behavior: 'smooth'
         });
     } else {
-        // Show all words
+        
         wordElements.forEach(element => {
             element.style.opacity = '1';
         });
@@ -93,7 +93,7 @@ function toggleHideShow() {
         });
     }
 
-    // Toggle the isHidden flag
+    
     isHidden = !isHidden;
 }
 

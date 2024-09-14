@@ -1,9 +1,5 @@
 package com.raafat.revise
 
-import android.content.Context
-import android.util.DisplayMetrics
-import android.view.WindowManager
-
 val numberOfAyahsForSuraArray = intArrayOf(
     /*  1 -  14 */ 7, 286, 200, 176, 120, 165, 206, 75, 129, 109, 123, 111, 43, 52,
     /* 15 -  28 */ 99, 128, 111, 110, 98, 135, 112, 78, 118, 64, 77, 227, 93, 88,
