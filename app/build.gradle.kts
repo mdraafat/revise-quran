@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.raafat.revise"
-    compileSdk = 34
+    compileSdk = 35
 
     buildFeatures {
         dataBinding = true
@@ -16,7 +16,7 @@ android {
     defaultConfig {
         applicationId = "com.raafat.revise"
         minSdk = 23
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 48
         versionName = "2.2.9"
 
@@ -55,19 +55,19 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     //gson
-    implementation ("com.google.code.gson:gson:2.11.0")
+    implementation (libs.gson)
 
     //hilt
-    implementation("com.google.dagger:hilt-android:2.52")
-    kapt("com.google.dagger:hilt-android-compiler:2.52")
-    implementation ("androidx.hilt:hilt-navigation-compose:1.2.0")
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.android.compiler)
+    implementation (libs.androidx.hilt.navigation.compose)
 
     //room
-    implementation ("androidx.room:room-runtime:2.6.1")
-    kapt ("androidx.room:room-compiler:2.6.1")
-    implementation("androidx.room:room-ktx:2.6.1")
+    implementation (libs.androidx.room.runtime)
+    kapt (libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
 
     //splash screen
-    implementation( "androidx.core:core-splashscreen:1.0.1")
+    implementation( libs.androidx.core.splashscreen)
 
 }
